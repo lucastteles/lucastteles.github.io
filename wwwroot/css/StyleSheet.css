@@ -1,0 +1,961 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+}
+
+/*background*/
+
+
+
+@media screen and (max-width: 480px) {
+    /* Estilos para telas menores do que 480px */
+    .background .fotos1 {
+        width: 35%;
+        content: url('../Imagens/celularduplo1.png');
+        /* Defina aqui o estilo desejado para as imagens */
+        /* Por exemplo: width: 100%; para ocupar a largura total */
+    }
+
+    .background .fotos2 {
+        width: 35%;
+        content: url('../Imagens/celulartodos1.png'); /*Correta*/
+        /* Defina aqui o estilo desejado para as imagens */
+        /* Por exemplo: width: 100%; para ocupar a largura total */
+    }
+
+    .background .fotos3 {
+        width: 35%;
+        content: url(../Imagens/celularcombo1.png);
+        /* Defina aqui o estilo desejado para as imagens */
+        /* Por exemplo: width: 100%; para ocupar a largura total */
+    }
+}
+
+.background  {
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+}
+
+    .background .carousel .slide {
+        width: 300%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        animation: fadeInOut 7s linear infinite;
+    }
+
+        .background .carousel .slide .contentproje {
+            flex: 1 1 350px;
+            animation: slideContent .4s linear .4s backwards;
+        }
+
+.contentproje img {
+    height: 100vh;
+    width: 35%;
+}
+
+@keyframes slideContent {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 50%;
+    }
+
+    10%, 90% {
+        opacity: 1;
+    }
+}
+
+.background .carousel {
+    display: none;
+}
+
+    .background .carousel.active {
+        display: block;
+    }
+
+
+/*imagem-logo*/
+.banner {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+
+
+.logo {
+    width: 20%;
+    height: 20%;
+    opacity: 0;
+    animation: logo 1s ease-in-out forwards;
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+        transform: translateY(-65px);
+    }
+    /* No início da animação (0%), o elemento estará invisível e posicionado acima (-20px) do local final */
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    /* No final da animação (100%), o elemento estará completamente visível e na posição final (sem deslocamento) */
+}
+
+h2 {
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: -40px;
+    opacity: 0; 
+    position: relative;
+    animation: deslizar 1s ease-in-out forwards;
+}
+
+
+h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 100;
+    position: relative;
+    animation: deslizar 1s ease-in-out forwards;
+}
+
+@keyframes deslizar {
+    0% {
+        opacity: 1; 
+        left: -100%; 
+    }
+
+    100% {
+        opacity: 1; 
+        left: 0; 
+    }
+}
+
+/*button {
+    width: 15%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: #CD7F32;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+
+    button:hover {
+        background-color: #000;
+        color: #CD7F32;
+        border: 2px solid #CD7F32;
+        cursor: pointer;
+    }
+*/
+
+.whatsapp-link {
+    width: 15%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: #CD7F32;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+    .whatsapp-link:hover {
+        background-color: #000;
+        color: #CD7F32;
+        border: 2px solid #CD7F32;
+        cursor: pointer;
+    }
+
+/*Card Combo*/
+.section-combo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; 
+    animation: combo 1s ease-in-out forwards;
+}
+
+@keyframes combo {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+ 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-combo {
+    margin-top: -185px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    padding: 30px 35px;
+    background: #000;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #5b5b58;
+}
+
+.combo {
+    width: 30%;
+    height: 40vh;
+    margin: 15px;
+}
+
+
+/*Apresentação-burguer*/
+
+.bemvindo {
+    margin: 50px;
+
+}
+
+.titulo-apresentacao {
+    text-align: center;
+    margin-top: 120px;
+    margin-right: -740px;
+    color: #603A24;
+    font-family: 'Gideon Roman', sans-serif;
+    position: relative;
+}
+
+
+.apresentacao {
+    display: flex;
+    margin-top: -35px;
+    margin-left: 150px;
+}
+
+.left-burguer {
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    flex-direction: column;
+    position: relative;
+}
+
+.burguer {
+    width: 50vw;
+    height: 80vh;
+}
+
+
+.Card-text {
+    margin-top: 50px;
+    margin-right: 150px;
+    z-index: 1;
+    width: 35%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 35px;
+    background: #603A24;
+    border-radius: 10px;
+    opacity: 100%;
+}
+
+
+.texto {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    margin-right: 80px;
+    position: absolute;
+}
+
+
+.historia {
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    color: #fff;
+}
+
+span {
+    color: #CD7F32;
+    font-family: 'Gideon Roman', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+
+
+/*Delivery*/
+
+.delivery {
+    display: flex;
+    height: 70vh;
+}
+
+.dede {
+    background-color: #CD7F32;
+    width: 50%;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.delivery-titulo {
+    font-size: 65px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 100;
+    margin-left: 55px;
+}
+
+.descricao {
+    color: #1C2120;
+    font-size: 25px;
+    font-weight: 100;
+    margin-left: 55px;
+}
+
+.cta-button {
+    width: 40%;
+    padding: 20px 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background: #000;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-top: 15px;
+    font-weight: 100;
+    margin-left: 55px;
+}
+
+    .cta-button:hover {
+        background-color: #000;
+        color: #CD7F32;
+        border: 0px solid #CD7F32;
+        cursor: pointer;
+    }
+
+.img-delivery {
+    display: flex;
+    width: 140%;
+    height: 70vh
+}
+
+
+/***Cardápio-Burguer***/
+.background-cardapio {
+    background-image: url('../Imagens/fundocardapio.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Imagem-cardapio {
+    margin-top: -850px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.titulo-burguer {
+    color: #fff;
+    margin-top: -720px;
+    font-size: 30px;
+    display: flex;
+    margin-left: 50px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    opacity: 0;
+    position: absolute;
+}
+
+
+.cardapio-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-top: 320px;
+}
+
+.card-cardapio {
+    flex-basis: calc(100% - 20px);
+    max-width: 450px;     
+    display: flex; 
+    background-color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    height: 210px;
+    box-shadow: 0px 1px 40px #000;
+    margin: 120px; 
+    margin-bottom: 50px;
+}
+
+.img-card {
+    width: 230px;
+    height: 290px; 
+    margin-left: -60px;
+    margin-top:-40px;
+}
+
+.text-container {
+    flex: 1; 
+    padding: 10px; 
+    justify-content: center;
+}
+
+.titulo-cardapio {
+    margin-bottom: 10px; 
+    color: #CD7F32;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.Paragrafo-button {
+    color: #7D7D7D;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
+
+/********Cardápio-porcao***********/
+.background-porcao {
+    background-image: url('../Imagens/fundocardapio.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.titulo-porcao {
+    color: #fff;
+    margin-top: -220px;
+    font-size: 30px;
+    display: flex;
+    margin-left: -70px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    opacity: 0;
+    position: absolute;
+}
+
+.card-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top: 220px;
+}
+
+.card-porcao {
+    width: 450px;
+    display: flex; 
+    background-color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    height: 210px;
+    box-shadow: 0px 1px 40px #000;
+    margin-left: 300px;
+}
+
+    .card-porcao.espacamento-extra {
+        margin-left: 0px;
+    }
+
+
+
+/********Cardápio-Combo***********/
+.background-combo {
+    background-image: url('../Imagens/fundocardapio.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.titulo-combo {
+    color: #fff;
+    margin-top: -620px;
+    font-size: 30px;
+    display: flex;
+    margin-left: 50px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    opacity: 0;
+    position: absolute;
+}
+
+.card-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-top: 220px;
+}
+
+
+
+
+
+/************FOOTER***********/
+footer {
+    color: #FFF;
+}
+
+#footer_content {
+    background-image: url('../Image/Design sem nome (25).png');
+    background-repeat: no-repeat;
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+    height: 200px;
+}
+
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_contacts img {
+    width: 300px;
+    height: 300px;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+    #footer_social_media .footer-link {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: aqua;
+        border-radius: 50%;
+    }
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    text-align: center;
+    margin-right: -1265px;
+    margin-top: 50px;
+}
+
+    .footer-list h3 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+
+#footer_copyright {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+}
+
+
+
+/*compelmento*/
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+    #footer_social_media .footer-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.5rem;
+        width: 3.5rem;
+        color: #CD7F32;
+        border-radius: 0%;
+        transition: all 0.4s;
+    }
+
+        #footer_social_media .footer-link i {
+            font-size: 1.5rem;
+        }
+
+        #footer_social_media .footer-link:hover {
+            background-color: #CD7F32;
+            color: #000;
+        }
+
+#instagram {
+    background-color: #000;
+    box-shadow: 0px 0px 0px 1px #fff;
+}
+
+
+#whatsapp {
+    background-color: #000;
+    box-shadow: 0px 0px 0px 1px #fff;
+}
+
+right-footer {
+    width: 300px;
+    height: 300px;
+}
+
+
+/**************************************/
+/*Responsivo*/
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .whatsapp-link {
+        width: 50%;
+    }
+}
+
+/****combo*****/
+@media only screen and (max-width: 768px) {
+   
+
+    .combo {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .card-combo {
+        display: block;
+        margin-top: -60px;
+    }
+}
+
+/*********Bemvindo**********/
+@media only screen and (max-width: 768px) {
+   
+
+    .bemvindo {
+        margin: 0px;
+        height: 1300px;
+    }
+
+    .titulo-apresentacao {
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    .apresentacao {
+        display: block;
+        margin-top: 0px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .left-burguer {
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .burguer {
+        width: 85vw;
+        height: 40vh;
+    }
+
+    .Card-text {
+        margin-top: 50px;
+        margin-right: 0px;
+        width: 70%;
+        height: auto;
+        z-index: 0;
+    }
+
+    .texto {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-right: 0px;
+        position: absolute;
+    }
+}
+
+/*Delivery*/
+@media only screen and (max-width: 768px) {
+    
+
+    .delivery { 
+        background-color: #CD7F32;
+        display: block;
+    }
+
+    .dede { 
+        background-color: #CD7F32;
+        width: 95%;
+        text-align: center;
+    }
+
+
+    .descricao {
+        color: #1C2120;
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+
+    .img-delivery {
+        display: flex;
+        margin-left: 0px;
+        width: 100%;
+        height: 70vh;
+        margin-top: 40px;
+    }
+
+    .cta-button {
+        width: 50%;
+    }
+}
+
+
+/*Cardápio*/
+@media only screen and (max-width: 780px) {
+    .Imagem-cardapio {
+        margin-top: -950px;
+        width: 100%;
+
+    }
+
+    .cardapio-container {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        margin-top: 880px;
+        justify-content: center;
+    }
+
+
+
+    .titulo-burguer {
+        margin-top: -750px;
+        margin-left: 20px;
+    }
+
+    .card-cardapio {
+        margin: 10px; 
+        margin-bottom: 20px;
+    }
+}
+/*Cardápio*/
+@media only screen and (max-width: 480px) {
+
+
+    .cardapio-container {
+        display: flex; /* Cria um flex container para os cards */
+        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
+        justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+        margin-top: 820px;
+    }
+
+    .Imagem-cardapio {
+        margin-top: -960px;
+        width: 100%;
+    }
+
+
+    .titulo-burguer {
+        margin-top: -700px;
+        margin-left: 20px;
+    }
+
+    .card-cardapio {
+        margin: 10px; /****************/
+        margin-bottom: 20px;
+    }
+
+    .img-card {
+        width: 55%;
+        /* Ajusta a largura da imagem conforme necessário */
+        height: 290px; /* Mantém a proporção da imagem */
+        margin-left: -60px;
+        margin-top: -40px;
+    }
+
+    .card-cardapio {
+        margin-left: 35px; /****************/
+    }
+}
+
+
+
+/*******Combo*******/
+@media only screen and (max-width: 780px) {
+
+   
+    .card-container {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        justify-content: center;
+    }
+
+
+
+    .card-porcao {
+        margin: 10px; 
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 450px;
+    }
+
+        .card-porcao.espacamento-extra {
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+   
+    .card-container {
+        justify-content: center;
+    }
+
+    .titulo-combo {
+        margin-top: -900px;
+        margin-left: 20px;
+    }
+
+    .titulo-porcao {
+        margin-top: -300px;
+        margin-left: 20px;
+    }
+
+
+}
+
+/*******Combo*******/
+@media only screen and (max-width: 480px) {
+
+    
+    .card-container {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        justify-content: center;
+    }
+
+
+    .card-porcao {
+        margin: 10px; 
+        margin-bottom: 20px;
+        width: 100%;
+        margin-left: 35px;
+    }
+
+        .card-porcao.espacamento-extra {
+            margin: 10px; 
+            margin-bottom: 20px;
+        }
+
+
+
+
+        .card-porcao.espacamento-extra {
+            margin-left: 35px; 
+        }
+  
+    .titulo-combo {
+        margin-top: -900px;
+        margin-left: 20px;
+    }
+}
+
+
+
+
+    /* Responsive styles using media queries */
+    @media (max-width: 768px) {
+        #footer_content {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 1.5rem;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #footer_contacts img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer-list {
+            margin-right: 0;
+            margin-top: 1.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #footer_content {
+            grid-template-columns: 1fr;
+            padding: 1rem;
+        }
+    }
+
+
+

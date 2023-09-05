@@ -1,0 +1,359 @@
+﻿@page
+@model IndexModel
+@{
+
+}
+<body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:1000,once: true, });
+    </script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+
+    <section class="background">
+        <div class="carousel active">
+            <div class="slide">
+                <div class="contentproje">
+                    <img src="imagens/bannerduploreino1.png" class="fotos1" alt="Slide 1">
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel">
+            <div class="slide">
+                <div class="contentproje">
+                    <img src="imagens/bannertodosburguer1.png" class="fotos2" alt="Slide 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel">
+            <div class="slide">
+                <div class="contentproje">
+                    <img src="imagens/bannercombo1.png" class="fotos3" alt="Slide 3">
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="~/imagens/logo.png" class="logo" />
+            <h2>CASTLE BURGUER</h2>
+            <h3>APRECIE O SABOR REAL</h3>
+            <a class="whatsapp-link" href="https://wa.me/message/DXCERIHS6XOEM1">
+                Faça seu pedido
+            </a>
+
+        </div>
+    </section>
+
+    <section class="section-combo">
+        <div class="card-combo">
+            <img src="~/imagens/combo2.png" class="combo" />
+            <img src="~/imagens/combo1.png" class="combo" />
+            <img src="~/imagens/combo3.png" class="combo" />
+
+
+
+        </div>
+    </section>
+
+    <section class="bemvindo">
+
+        <h1 class="titulo-apresentacao" data-aos="fade-left">
+            BEM-VINDOS AO<br />
+            CASTLE BURGUERS
+        </h1>
+
+        <div class="apresentacao">
+            <div class="left-burguer" data-aos="fade-right">
+                <img src="~/imagens/Castleburguerloja.png" class="burguer" />
+            </div>
+
+            <div class="texto" data-aos="fade-left">
+                <div class="Card-text">
+                    <p class="historia">
+                        Era uma vez no Reino dos Sabores, um apaixonado
+                        por hambúrgueres chamado
+                        Rei Cássio decidiu compartilhar sua paixão com
+                        todos. Assim, ele construiu a <span>Castle Burguer</span>, uma
+                        hamburgueria lendária. Com ingredientes
+                        selecionados e técnicas culinárias refinadas, o Rei
+                        Cássio criava hambúrgueres únicos que
+                        encantavam os súditos.
+                        <br />
+                        <br />
+                        A fama da <span>Castle Burguer</span> se espalhou além do
+                        reino, atraindo visitantes de terras distantes.
+                        E agora, você tem a oportunidade de apreciar o
+                        verdadeiro sabor real, no conforto da sua casa. A
+                        Castle Burgue funciona no formato de delivery,
+                        levando os deliciosos hambúrgueres
+                        <span01 class="sublinhado">diretamente até você.</span01>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="delivery" data-aos="fade-up">
+        <div class="dede">
+            <div class="delivery-laranja">
+                <h1 class="delivery-titulo">DELIVERY</h1>
+                <p class="descricao">
+                    Do nosso castelo direto para a sua porta,<br />
+                    o Sabor Real chega até você!
+                </p>
+                <a href="https://wa.me/message/DXCERIHS6XOEM1">
+                    <button class="cta-button">Faça seu pedido</button>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="montagem" data-aos="fade-down">
+            <img src="~/imagens/Entregador.png" class="img-delivery" />
+
+        </div>
+    </section>
+
+
+    <section class="background-cardapio">
+
+        <div class="cardapio">
+            <img src="~/Imagens/topocardapio.png" class="Imagem-cardapio">
+        </div>
+
+        <div class=titulo-test>
+            <h1 class="titulo-burguer" data-aos="fade-up">BURGUES</h1>
+        </div>
+
+
+
+        <div class="cardapio-container">
+            <div class="card-cardapio">
+                <img src="~/Imagens/DuploReino.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Duplo Reino</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Pão, duas carnes, queijo, bacon,
+                            molho especial, alface e tomate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/DuploDuquesa.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Duplo Duquesa</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Pão, duas carnes, queijo, bacon,
+                            molho especial e cheddar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/PrincipeJr.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Princípe Jr.</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Pão, carne e queijo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/ClassicoDoReino.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Clássico do Reino</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Pão, carne, queijo, bacon,
+                            molho especial, alface e tomate.
+                        </p>
+                    </div>
+                </div><
+            </div>
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/Duquesa.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Duquesa</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Pão, carne,cheddar, barbecue, bacon.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/XDuque.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">X-Duque</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Pão, carne, queijo, ovo, presunto,
+                            calabresa, bacon, alface,tomate e ketchup.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/RealBurguer.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio"> Real Burguer</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Pão, carne, queijo, alface e tomate.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    @*******************Porção******************@
+
+    <section class="background-porcao">
+
+        <div class=titulo-test>
+            <h1 class="titulo-porcao" data-aos="fade-up">PORÇÕES</h1>
+        </div>
+
+        <div class="card-container">
+            <div class="card-porcao espacamento-extra">
+                <img src="~/Imagens/BatataReal.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Batata Real</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Deliciosa batata palito, quentinha e crocante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-porcao ">
+                <img src="~/Imagens/batata6.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Batata da Corte</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Deliciosa batata palito, quentinha e crocante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @**********************COMBO********************@
+
+    <section class="background-combo">
+        <div class=titulo-test>
+            <h1 class="titulo-combo" data-aos="fade-up">COMBOS</h1>
+        </div>
+
+
+        <div class="card-container">
+            <div class="card-cardapio">
+                <img src="~/Imagens/1.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Combo Kids</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Príncipe Jr, coca 300ml, e
+                            batata.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/2.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Combo Duplo Reino</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Duplo Reino, Batata frita
+                            e Coca-cola 300ml.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/3.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Combo Duquesa</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Duquesa, Batata frita
+                            e Coca-cola 300ml.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/4.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Combo Casal</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            2 Real burguer, Batata frita,
+                            8 de Anéis de Cebola 2 Coca-cola 300ml.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/5.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Combo Casal Premium</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            Duquesa, Clássico do reino, Batata frita,
+                            12 Anéis de Cebola, 2 Coca-cola 300ml.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-cardapio">
+                <img src="~/Imagens/6.png" class="img-card" />
+                <div class="text-container">
+                    <h5 class="titulo-cardapio">Combo Da Galera</h5>
+                    <div class="Paragrafo-button">
+                        <p>
+                            4 Real burguer, Batata frita,
+                            12 Anéis de Cebola, 2l kuat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
